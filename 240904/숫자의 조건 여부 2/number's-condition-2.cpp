@@ -6,7 +6,7 @@ int main() {
     int a;
     cin >> a;
 
-    if (a % 5 == 0) {
+    if (a == 5) {
         cout << 'A';
     }
     if (a % 2 == 0) {
