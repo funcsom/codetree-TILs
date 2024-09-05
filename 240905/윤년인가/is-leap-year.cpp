@@ -7,7 +7,7 @@ int main() {
     cin >> y;
 
     if (y % 4 == 0) {
-        if (y % 100 == 0 && y % 400 == 1) {
+        if (y % 100 == 0 && y % 400 != 1) {
             cout << "false";
         }
         else {
