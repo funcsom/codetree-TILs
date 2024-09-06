@@ -7,15 +7,17 @@ int main() {
     cin >> n;
 
     while (n < 1000) {
-        cnt++;
 
         if (n % 2 == 0) {
             n = n * 2 + 2;
+            cnt++;
         }
         else {
             n = n * 3 + 1;
+            cnt++;
         }
+        if (n > 1000) cnt -= 1;
     }
-    cout << cnt-1;
+    cout << cnt;
     return 0;
 }
