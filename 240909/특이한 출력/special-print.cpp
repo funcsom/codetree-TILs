@@ -9,7 +9,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
             cout << '(' << i << ", " << j << ')' << ' ';
-            if ((i == 1 && j == 3) || (i == 2 && j == 2) || (i == 3 && j == 1)) {
+            if ((i + j) % 4 == 0) {
                 cout << endl;
             }
         }
