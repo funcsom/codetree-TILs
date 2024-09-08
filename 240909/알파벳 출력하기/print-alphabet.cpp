@@ -9,7 +9,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j <= i; j++) {
             cout << (char)cnt;
-            if (cnt == 91) {
+            if (cnt == 90) {
                 cnt = 65;
                 continue;
             }
