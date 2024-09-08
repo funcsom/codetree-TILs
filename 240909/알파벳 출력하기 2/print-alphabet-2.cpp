@@ -12,6 +12,10 @@ int main() {
         }
         for (int j = 0; j < n - i; j++) {
             cout << (char)cnt << ' ';
+            if (cnt == 90) {
+                cnt = 65;
+                continue;
+            }
             cnt++;
         }
         cout << endl;
