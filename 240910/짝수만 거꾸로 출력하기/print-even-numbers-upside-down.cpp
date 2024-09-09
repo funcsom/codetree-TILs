@@ -9,8 +9,9 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
         if (arr[i] % 2 == 0) {
-            cnt++;
+
             where[cnt] = arr[i];
+            cnt++;
         }
     }
     for (int j = cnt - 1; j >= 0; j--) {
