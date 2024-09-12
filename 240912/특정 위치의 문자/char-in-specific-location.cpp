@@ -13,6 +13,11 @@ int main() {
             idx = i;
         }
     }
-    cout << idx;
+    if (idx == -1) {
+        cout << "None";
+    }
+    else {
+        cout << idx;
+    }
     return 0;
 }
