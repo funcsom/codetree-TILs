@@ -12,7 +12,7 @@ int main() {
     }
 
     for (int j = 0; j < q; j++) {
-        int idx = -1;
+        int idx = 0;
         cin >> question;
         if (question == 1) {
             cin >> a;
