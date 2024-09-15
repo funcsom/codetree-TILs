@@ -11,7 +11,7 @@ int main() {
         arr[a]++;
     }
 
-    for (int j = 1; j <= n; j++) {
+    for (int j = n; j >= 1; j--) {
         if (arr[j] == 1) {
             cout << j;
             break;
