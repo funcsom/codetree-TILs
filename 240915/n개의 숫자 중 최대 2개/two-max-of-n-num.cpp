@@ -10,7 +10,6 @@ int main() {
         cin >> a;
         if (i == 0) {
             first = a;
-            second = a;
         }
         if (a > first) {
             second = first;
