@@ -11,7 +11,7 @@ int main() {
         arr[a]++;
     }
 
-    for (int j = n; j >= 1; j--) {
+    for (int j = a; j >= 1; j--) {
         if (arr[j] == 1) {
             idx = j;
             break;
