@@ -7,7 +7,7 @@ int main() {
     int a, b, temp, sum = 0;
     cin >> a >> b;
 
-    while (a >= 1) {
+    while (a > 1) {
         temp = a % b;
         num[temp]++;
         a = a / b;
