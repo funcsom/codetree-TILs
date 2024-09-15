@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int n, arr[10], cnt=0, min_val;
+    int n, arr[100], cnt=0, min_val;
     cin >> n;
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
