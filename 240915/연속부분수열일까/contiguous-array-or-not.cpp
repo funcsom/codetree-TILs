@@ -3,9 +3,8 @@ using namespace std;
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int n1, n2, idx = -1;
-    int n1s[100], n2s[100];
-    bool h = 1;
+    int n1, n2, idx = -1, h;
+    int n1s[100], n2s[100], correct[100];
     cin >> n1 >> n2;
 
     for (int i = 0; i < n1; i++) {
@@ -16,16 +15,20 @@ int main() {
     }
     
     for (int j = 0; j < n1; j++) {
+        h = 1;
         if (n2s[0] == n1s[j]) {
             idx = j;
+        }
+        for (int k = 0; k < n2; k++) {
+            if (n2s[k] != n1s[idx + k]) {
+                h = 0;
+            }
+        }
+        if (h == 1) {
             break;
         }
     }
-    for (int k = 0; k < n2; k++) {
-        if (n2s[k] != n1s[idx + k]) {
-            h = 0;
-        }
-    }
+    
     if (h == 0) {
         cout << "No";
     }
