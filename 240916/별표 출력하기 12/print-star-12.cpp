@@ -10,10 +10,10 @@ int main() {
     }
     cout << endl;
 
-    if (n % 2 == 1) {
+    if (n % 2 == 0) {
         for (int i = 0; i < n-1; i++) {
             for (int j = 0; j < n; j++) {
-                if (j % 2 == 0 && j - i >= 0) {
+                if (j % 2 == 1 && j - i >= 0) {
                     cout << '*' << ' ';
                 }
                 else {
@@ -26,7 +26,7 @@ int main() {
     else {
         for (int i = 0; i < n-2; i++) {
             for (int j = 0; j < n; j++) {
-                if (j % 2 == 0 && j - i >= 0) {
+                if (j % 2 == 1 && j - i >= 0) {
                     cout << '*' << ' ';
                 }
                 else {
