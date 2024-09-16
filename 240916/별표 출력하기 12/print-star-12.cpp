@@ -8,12 +8,13 @@ int main() {
     for (int i = 0; i < n; i++) {
         cout << "* ";
     }
+    int num = n;
     cout << endl;
 
-    if (n % 2 == 0) n -= 1;
-    else n-=2;
+    if (num % 2 == 0) num -= 1;
+    else num-=2;
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < num; i++) {
         for (int j = 0; j < n; j++) {
             if (j % 2 == 0 && j - i >= 1) cout << "* ";
             else {
