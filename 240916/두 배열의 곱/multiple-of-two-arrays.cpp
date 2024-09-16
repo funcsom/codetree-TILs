@@ -16,7 +16,7 @@ int main() {
     }
     for (int j = 0; j < 3; j++) {
         for (int k = 0; k < 3; k++) {
-            arr_2d_1[j][k] += arr_2d_2[j][k];
+            arr_2d_1[j][k] *= arr_2d_2[j][k];
             cout << arr_2d_1[j][k] << ' ';
         }
         cout << endl;
