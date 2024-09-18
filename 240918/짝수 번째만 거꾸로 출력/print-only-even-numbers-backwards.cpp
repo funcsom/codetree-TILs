@@ -8,6 +8,9 @@ int main() {
     cin >> str;
 
     for (int i = str.length(); i >= 0; i--) {
+        if (str[i] == '\0') {
+            continue;
+        }
         if (i % 2 == 1) {
             cout << str[i];
         }
