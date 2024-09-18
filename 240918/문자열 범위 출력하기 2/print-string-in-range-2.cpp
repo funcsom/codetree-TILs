@@ -9,7 +9,9 @@ int main() {
 
     cin >> str >> n;
 
-    for (int i = str.length() - 1; i >= str.length() - n && i >= 0; i--) {
+    if (str[str.length()] == '\0') n++;
+
+    for (int i = str.length() - 1; i >= str.length() - n; i--) {
         cout << str[i];
     }
     return 0;
