@@ -9,7 +9,7 @@ int main() {
 
     cin >> str >> n;
 
-    for (int i = str.length() -1; i >= str.length() - n; i--) {
+    for (int i = str.length() - 1; i >= str.length() - n && i >= 0; i--) {
         cout << str[i];
     }
     return 0;
