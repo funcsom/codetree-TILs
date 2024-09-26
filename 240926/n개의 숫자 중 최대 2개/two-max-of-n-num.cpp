@@ -14,12 +14,12 @@ int main() {
     for (int i = 0; i < n; i++) {
         if (array[i] >= max_1) {
             max_1 = array[i];
-            num = i + 1;
+            num = i;
         }
     }
     max_2 = array[num+1];
     for (int i = 0; i < n; i++) {
-        if (i == num - 1) {
+        if (i == num) {
             continue;
         }
         if (array[i] >= max_2) {
