@@ -12,8 +12,9 @@ int main() {
     }
     else {
         while (a >= b) {
-            cout << a/b;
-            a = a/b;
+            temp = (a % b) * 10 / b;
+            cout << temp;
+            a = (a % b) * 10 - (b * temp);
         }
     }
     cout << '.';
