@@ -10,6 +10,7 @@ int main() {
         for (int j = 1; j <= n; j++) {
             if (i == 1) {
                 cout << "* ";
+                continue;
             }
             if (j % 2 == 0 && i <= j) {
                 cout << "* ";
@@ -18,6 +19,7 @@ int main() {
                 cout << "  ";
             }
         }
+        cout << endl;
     }
     return 0;
 }
