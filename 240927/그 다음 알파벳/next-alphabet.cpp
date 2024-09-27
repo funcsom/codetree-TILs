@@ -8,7 +8,7 @@ int main() {
     cin >> a;
 
     if (a == 'z') {
-        cout << a;
+        cout << 'a';
     }
     else {
         cout << (char)((int)a+1);
