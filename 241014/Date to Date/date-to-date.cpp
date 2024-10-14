@@ -5,8 +5,8 @@ int main() {
     // 여기에 코드를 작성해주세요.
     int m1, d1, m2, d2, result=0;
     cin >> m1 >> d1 >> m2 >> d2;
-    if (m1 == m2 && d1 == d2) {
-        cout << 1;
+    if (m1 == m2) {
+        cout << d2 - d1 + 1;
     }
 
     else {
